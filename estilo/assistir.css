@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+  }
+  body{
+    background: rgba(0, 0, 0, 0.808) url('../imagens/assistir/aneis_poder.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  :root {
+    --word-color: #ebeae5;
+  }
+  
+  /* section ---------------------- */
+  .conteudo {
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  
+  .image {
+    position: relative;
+    width: 390px;
+  }
+  
+  .conteudo img {
+    max-width: 20px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+  }
+
+  .conteudo-texto {
+    max-width: 790px;
+  }
+
+  .conteudo-texto {
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+  }
+  
+  .conteudo h1 {
+    font-family: 'Righteous';
+    font-size: 4.3rem;
+    color: var(--word-color);
+  }
+  
+  .conteudo-texto p {
+    color: var(--word-color);
+    font-size: 1.5rem;
+  }
+  
+  .assistir-btn {
+    font-family: 'Sarala', sans-serif;
+    color: #140f10;
+    font-weight: bold;
+    background: var(--word-color);
+    border-radius: 5px;
+    padding: 13px 30px;
+    place-self: start;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s ease-out;
+    margin-right: 20px;
+  }
+  
+  .assistir-btn:hover {
+    background: #bdbcbc;
+    color: #140f10;
+  }
+  
+  .trailer-btn {
+    font-family: 'Sarala', sans-serif;
+    color: #f7efe9;
+    font-weight: bold;
+    background: var(--word-color);
+    border-radius: 5px;
+    padding: 13px 30px;
+    place-self: start;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s ease-out;
+    background: #1b1b1dda;
+    box-shadow:0px 0px 0px 1.5px white inset;
+  }
+  
+  .trailer-btn:hover {
+    color: #2F2325;
+    background-color: white;
+  }
+
+  #sinopse{
+    font-size: 20px;
+  }
+
+  @media (max-width: 700px) {
+    .conteudo {
+      flex-direction: column;
+      margin: 0px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    .conteudo-texto {
+      align-items: center;
+      gap: 20px;
+    }
+    .conteudo-texto h1 {
+      font-size: 3rem;
+    }
+    .conteudo-texto p {
+      text-align: center;
+      font-size: 1.25rem;
+    }
+    .conteudo-btn {
+      place-self: center;
+    }
+    .descricao p{
+      text-align: left;
+    }
+    #botoes {
+      margin: 20px 0px;
+    }
+    #sinopse{
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .assistir-btn, .trailer-btn {
+      font-size: 16px;
+    }
+    #botoes {
+      line-height: 60px;
+    }
+  }
+  
+  /* section ------------ */
+  
+  .descricao > p {
+    line-height: 28px;
+    font-size: 15px;
+    color: rgb(221, 218, 218);
+  }
+
+  .descricao > p > span {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .descricao > p > #idade{
+    background-color: rgb(235, 109, 5);
+    border-radius: 5px;
+    padding: 1px 3px 1px 1px;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  #dados{
+    color: azure;
+  }
+
+
+  

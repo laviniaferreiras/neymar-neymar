@@ -1,0 +1,78 @@
+body { 
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    max-width: 110%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container > .search-box {
+    position: relative;
+    height: 42px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.search-box > input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #323334;
+    padding: 0 15px 0 45px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.search-box > i {
+    position: absolute;
+    z-index: 2;
+    color: #999;
+    top: 50%;
+    left: 15px;
+    font-size: 20px;
+    transform: translateY(-50%);
+}
+
+.container > .imagens > .imagem-box {
+    position: relative;
+    height: 150px;
+    width: 270px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 6px 8px 10px black;
+}
+
+.imagens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagens > .imagem-box {
+    margin: 8px;
+}
+
+.imagens > .imagem-box > a {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+
+.imagens > .imagem-box:hover {
+    outline: 3.5px solid white;
+    outline-offset: -3.5px;
+    transform: scale(1.05);
+    transition-duration: 0.6s;
+    box-shadow: 6px 8px 10px black;
+}

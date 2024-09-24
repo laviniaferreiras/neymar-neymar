@@ -1,0 +1,99 @@
+@media (max-width: 980px) {
+  #logotipo {
+    width: 45px;
+  }
+  #logo {
+    font-size: 32px;
+  }
+  .secao_filmes .carousel-item a img {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  #pricipais-destaque-responsivo a img {
+    width: 40%;
+  }
+  details{
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  #logo{
+    display: none;
+  }
+  #logotipo-mobile {
+    display: block;
+    width: 45px;
+  }
+  .secao_filmes .carousel-item a img {
+    width: 40%;
+    margin: 10px;
+  }
+  #pricipais-destaque-responsivo a img {
+    width: 40%;
+  }
+  #seta-esquerda {
+    width: 5%;
+  }
+  #seta-direita {
+      width: 5%;
+  }
+  h2{
+    font-size: 1.3em;
+}
+details{
+  margin: 0px 10px;
+}
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    padding: 20px 10px;
+  }
+  nav ul {
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin-top: 20px;
+  }
+  .secao_filmes .carousel-item a img {
+    width: 40%;
+    margin: 5px;
+  }
+  #pricipais-destaque-responsivo a img {
+    width: 40%;
+  }
+  header > a {
+    font-size: 0.9em;
+  }
+  summary{
+    width: 60px;
+  }
+  details{
+    margin: 0px;
+  }
+  .menu{
+    width: 100px;
+    margin: 0px -40px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .secao_filmes .carousel-item a img {
+    width: 80%;
+    margin: 10px;
+  }
+  #pricipais-destaque-responsivo a img {
+    width: 80%;
+  }
+  #seta-esquerda {
+    width: 8%;
+  }
+  #seta-direita {
+      width: 8%;
+  }
+}

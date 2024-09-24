@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat'; 
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7) url('../imagens/serie-1.jpg.opdownload');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  color: rgb(243, 239, 239);
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============================== Formulário ================================== */
+.form {
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.815);
+  margin: 60px auto;
+  padding: 50px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.email input, .senha input, .confirmar-senha input, .nome input, .btn {
+  width: 80%;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #999;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #181818;
+}
+
+/* ======================== Buttons e Links ========================== */
+.btn {
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #020141;
+  color: white;
+  border-color: rgb(2, 1, 65);
+}
+
+.btn:hover{
+  color: rgb(2, 1, 65);
+  background-color: white;
+  transition-duration: 0.7s;
+}
+
+.lembrar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.form .link {
+  color: rgba(255,255,255, 0.6);
+  transition: .2s;
+}
+
+.form .link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ======================= Cadastro ================================== */
+.form p {
+   font-size: 20px;
+   margin: 15px 0px;
+}
+
+.cadastro-btn {
+  color: #fff;
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.cadastro-btn:hover{
+  color: white;
+  background-color: rgb(2, 1, 65);
+  border-color: rgb(2, 1, 65);
+  transition-duration: 0.7s;
+}
+
+/* ======================== Responsivo ============================== */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .email input, .senha input, .confirmar-senha input, .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,354 @@
+/* ========================================= CONFIGURAÇÕES GLOBAIS============================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 10), rgb(2, 2, 26));
+}
+h2{
+    color: white;
+    font-size: 1.7em;
+}
+
+/* ================================================================================= */
+
+/* =========================== NAVEGAÇÃO E PARTE INICIAL =========================== */
+
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 10), transparent);
+}
+header > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+#logo {
+  text-decoration: none;
+  font-size: 2.5em;
+  font-family: 'Montserrat';
+  color: #c7c7e2;
+  font-weight: bold;
+  max-width: 800px;
+}
+
+#area-principal{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.poster {
+  margin: auto;
+  max-width: 100%;
+  max-height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 6px 7px 8px rgba(0, 0, 0, 0.226);
+}
+
+a:hover {
+  text-decoration-line: none;
+  color: white;
+}
+
+#logotipo {
+  width: 60px;
+}
+
+#logotipo-mobile {
+  display: none;
+}
+
+.menu > a {
+  float: left;
+  padding: 5px;
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 7px 5px;
+  margin: 5px;
+}
+
+.menu a::before {
+  display: none;
+}
+
+.menu::after {
+  clear:both;
+  content: "";
+  display: block;
+}
+
+header > a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: white;
+}
+
+header > a.center::before {
+  transform: scale(0, 1);
+  transition: .3s ease;
+}
+
+header > a:hover::before {  
+  transform: scale(1, 1);
+}
+
+
+:root {
+  --primColor: #dcdcdc;
+  --secoColor: #555555;
+  --cornerRad: 4px;
+}
+body {
+  background-color: var(--primColor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+details {
+  margin: 0px 40px;
+}
+summary > img{
+  width: 150px;
+}
+summary > p {
+  color: #fff;
+  font-size: 12px;
+}
+summary {
+  display: inline;
+  writing-mode: horizontal-tb;
+  text-align: center;
+  padding: 12px 10px;
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+  max-width: 70px;
+  margin: 0px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+summary::before, summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+  background-color: #363536;
+  position: absolute;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+}
+
+.menu > a {
+  padding: 10px 20px;
+  margin: 0px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+  float: left;
+  color: #fff;
+  display: block;
+  text-align: left;
+}
+
+.menu a:nth-of-type(1) {
+  padding-top: 15px;
+}
+
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+details::before {
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px;
+  opacity: 0.4;
+}
+
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+
+.menu > a:hover {
+  transition-duration: 5s;
+  background-color: rgb(43, 40, 40);
+  color: rgb(255, 255, 255);
+}
+
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 107px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*================================================================================= */
+
+/* ========================== SECTION FILMES E SÉRIES ============================== */
+
+.titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 0px 0px 0px;
+}
+#filmes-marvel, #filmes-drama{
+    padding: 0px;
+}
+
+.section-filmes {
+    text-align: center;
+    margin: auto;
+    padding: 25px 0px;
+}
+.section-filmes > div > a > img{
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 6px 8px 10px black;
+    width: 21.5%;
+    margin: auto 10px;
+}
+.section-filmes > div > a > img:hover{
+    outline: 4.5px solid white;
+    outline-offset: -4.5px;
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    box-shadow: 6px 8px 10px black;
+}
+#seta-esquerda {
+    width: 3%;
+}
+#seta-direita {
+    width: 3%;
+}
+#seta-esquerda-principal {
+    width: 6%;
+}
+
+#seta-direita-principal {
+    width: 6%;
+}
+#seta-esquerda-principal:hover {
+    background-image: linear-gradient(to left, transparent, black);
+    transition-duration: 0.5s;
+}
+#seta-direita-principal:hover {
+    background-image: linear-gradient(to right, transparent, black);
+    transition-duration: 0.5s;
+}
+
+
+/* ================================================================================= */
+
+/* =============================== RODAPÉ DA PÁGINA ================================ */
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 2) 50%);
+    font-size: 14px;
+}
+h3{
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+    color: #c7c7e2;
+    font-weight: bold;
+}
+h3 > #logotipo{
+    width: 45px;
+}
+footer > a{
+    margin: 0px 15px;
+    color: #cacaca;
+    text-decoration: none;
+}
+p > a{
+    margin: 10px;
+    margin-bottom: 0px;
+    line-height: 40px;
+    color: #cacaca;
+}
+p{
+    margin: 0px;
+}
+/* ================================================================================= */
